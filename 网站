@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 设置字符编码为UTF-8，确保能正确显示各种字符 -->
+    <meta charset="UTF-8">
+    <!-- 让网页宽度能自适应设备宽度，初始缩放比例为1.0，在移动设备上正确显示网页 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七15官网</title>
+    <!-- 引入Roboto字体，可在网页中使用该字体来美化文本显示 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+       .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+       .nav-links li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+       .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+        }
+
+       .nav-links a:hover,
+       .nav-links a.active {
+            color: #ddd;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+
+       .intro {
+            text-align: center;
+            padding: 50px;
+            background-color: #f1f1f1;
+        }
+
+       .intro h1 {
+            margin-bottom: 20px;
+        }
+
+       .intro p {
+            margin-bottom: 20px;
+        }
+
+       .quote-of-the-day {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+       .resource-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+       .card {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+       .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+       .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+       .btn {
+            display: inline-block;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+       .btn:hover {
+            background-color: #4cae4c;
+        }
+
+        @media screen and (max-width: 768px) {
+           .navbar {
+                flex-direction: column;
+            }
+
+           .nav-links li {
+                margin-bottom: 10px;
+            }
+
+           .resource-cards {
+                flex-direction: column;
+            }
+        }
+
+       .latest-updates {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+       .latest-updates h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+       .update-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+       .update-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+       .update-item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">七15官网</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="resources.html">资源</a></li>
+                <li><a href="about.html">关于本站</a></li>
+                <li><a href="contact.html">联系站长</a></li>
+                <li><a href="links.html">友情链接</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro" id="home">
+            <h1><strong>欢迎来到七15班官网</strong></h1>
+            <p><strong>这里是我们共同成长的地方，分享快乐与知识。</strong></p>
+            <p>本站由[具体姓名]制作，致力于为七15班同学提供便捷的交流与学习平台。</p>
+            <p><strong>特别鸣谢 ：[相关人员姓名]（具体贡献）</strong></p>
+        </section>
+
+        <section class="quote-of-the-day">
+            <h2>每日一句</h2>
+            <p>学如逆水行舟，不进则退。 ---《增广贤文》</p>
+        </section>
+
+        <section class="latest-updates">
+            <h2>最新动态</h2>
+            <div class="update-item">
+                <h3>班级活动更新</h3>
+                <p>2024.11.28上传了上次班级活动的照片，可在[具体页面或链接]查看。</p>
+            </div>
+            <div class="update-item">
+                <h3>学习资料新增</h3>
+                <p>2024.11.28增加了各科学习资料板块，方便同学们下载学习。</p>
+            </div>
+            <div class="update-item">
+                <h3>论坛功能优化</h3>
+                <p>2024.11.28对班级论坛的部分功能进行了优化，提升使用体验。</p>
+            </div>
+            <!-- 更多更新 -->
+        </section>
+    </main>
+
+
+    <footer>
+        <center><p>版权所有 © 2024 [具体姓名或班级相关负责人姓名]</p></center>
+    </footer>
+
+    <script>
+        // 简单的动画效果，当页面加载完成后，卡片淡入
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.opacity = 0;
+                card.offsetHeight; // 触发重绘
+                card.style.transition = 'opacity 0.5s ease-in';
+                card.style.opacity = 1;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
